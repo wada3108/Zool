@@ -21,7 +21,6 @@ def sync_gpt_call(name, context):
         temperature=0.7,
         max_tokens=200
     )
-    print(response)
     return response.choices[0].message.content
 
 # 非同期で GPT API を呼び出す
